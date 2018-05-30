@@ -1,0 +1,286 @@
+.card {
+  
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 55rem;
+
+  &__side {
+    background-color: orangered;
+    height: 55rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+    &--front {
+      background-color: $color-white;
+    }
+
+    &--back {
+      
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+      }
+
+      &-2 {
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+      }
+    }
+
+  }
+
+
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: hue;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    
+    &--1 {
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/FwOvT1JA4mc/hqdefault.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/vHVZrDL1oeM/hqdefault.jpg);
+    }
+
+    &--3 {
+/*      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/EllieSnow1.jpg);*/
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/_-HaR8z6Yig/hqdefault.jpg);
+    }
+
+    &--4{
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/oM5rqCNNWuA/hqdefault.jpg);
+    }
+
+    &--5{
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/Nh-BB_vcAkc/sddefault.jpg);
+    }
+
+    &--6 {
+/*      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/EllieSnow1.jpg);*/
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/X9gsvaEbZ7Q/sddefault.jpg);
+    }
+    &--7 {
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/AXZEqhEylPI/sddefault.jpg);
+    }
+
+    &--8 {
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/NjN7iExQLqQ/hqdefault.jpg);
+    }
+
+    &--9 {
+/*      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/EllieSnow1.jpg);*/
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/nNsowIhk4bQ/sddefault.jpg);
+    }
+
+    &--10 {
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/XhzPAHm3Jak/hqdefault.jpg);
+    }
+
+    &--11 {
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/a5Xf5_IEMs8/sddefault.jpg);
+    }
+
+    &--12 {
+/*      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/EllieSnow1.jpg);*/
+      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(//i.ytimg.com/vi/X9gsvaEbZ7Q/sddefault.jpg);
+    }
+
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    width: 75%;
+    height: 50%;
+
+  }
+
+  &__heading-span {
+    padding: 2rem .5rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .65), rgba($color-secondary-dark, .65));
+    }
+    &--2 {
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .65), rgba($color-secondary-dark, .65));
+    }
+    &--3 {
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .65), rgba($color-secondary-dark, .65));
+    }
+  }
+
+  &__details {
+
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+          &:not(:last-child){
+            border-bottom: 1px solid #eee;
+          }
+      }
+    }
+  }
+
+  // BACK SIDE STYLING
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;   
+
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+
+  }
+
+
+
+
+
+  @include respond(tab-port){
+/*  @media only screen and (max-width: 56.25em), 
+          only screen and (hover: none) {*/
+
+    height: auto;
+    background-color: $color-white;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+
+    height: auto;
+
+    &__side {
+      height: auto;
+
+      position: relative;
+      border-radius: 3px;
+      box-shadow:  none;
+
+      &--back {
+        
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+
+    }
+
+
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+
+/*     BACK SIDE STYLING */
+
+    &__cta {
+      position: relative;
+      top: 0;
+      transform: translate(0);
+      left: 0;
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem; 
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
