@@ -1127,29 +1127,25 @@ body {
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/vHVZrDL1oeM/hqdefault.jpg); }
     .card__picture--3 {
-      /*      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/EllieSnow1.jpg);*/
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/_-HaR8z6Yig/hqdefault.jpg); }
     .card__picture--4 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/oM5rqCNNWuA/hqdefault.jpg); }
     .card__picture--5 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/Nh-BB_vcAkc/sddefault.jpg); }
     .card__picture--6 {
-      /*      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/EllieSnow1.jpg);*/
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/X9gsvaEbZ7Q/sddefault.jpg); }
     .card__picture--7 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/AXZEqhEylPI/sddefault.jpg); }
     .card__picture--8 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/NjN7iExQLqQ/hqdefault.jpg); }
     .card__picture--9 {
-      /*      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/EllieSnow1.jpg);*/
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/nNsowIhk4bQ/sddefault.jpg); }
     .card__picture--10 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/XhzPAHm3Jak/hqdefault.jpg); }
     .card__picture--11 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/a5Xf5_IEMs8/sddefault.jpg); }
     .card__picture--12 {
-      /*      background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/EllieSnow1.jpg);*/
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/X9gsvaEbZ7Q/sddefault.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(//i.ytimg.com/vi/S-5EJbjek94/hqdefault.jpg); }
   .card__heading {
     font-size: 1.8rem;
     font-weight: 300;
